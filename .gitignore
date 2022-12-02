@@ -1,0 +1,5 @@
+# no need to save large input
+input.txt
+
+# dont update helper script
+getDay.sh
