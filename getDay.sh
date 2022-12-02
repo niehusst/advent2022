@@ -10,7 +10,7 @@ fi
 
 mkdir day$1/
 touch day$1/main.py
-curl "https://adventofcode.com/2021/day/$1/input" \
+curl "https://adventofcode.com/2022/day/$1/input" \
   -H 'authority: adventofcode.com' \
   -H 'pragma: no-cache' \
   -H 'cache-control: no-cache' \
@@ -24,7 +24,7 @@ curl "https://adventofcode.com/2021/day/$1/input" \
   -H 'sec-fetch-mode: navigate' \
   -H 'sec-fetch-user: ?1' \
   -H 'sec-fetch-dest: document' \
-  -H "referer: https://adventofcode.com/2021/day/$1" \
+  -H "referer: https://adventofcode.com/2022/day/$1" \
   -H 'accept-language: en-US,en;q=0.9' \
   -H 'cookie: <YOUR COOKIE HERE>' \
   --compressed > day$1/input.txt
