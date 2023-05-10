@@ -78,22 +78,3 @@ with open('input.txt') as f:
         score += ncalcScore(enemyMove, outcome)
 
     print(f"final score: {score}")
-
-# part 3
-
-# calculate ELO rating of the game
-game_result = calc_game_results()
-
-def get_elo(score1, score2):
-    if score1 > score2:
-        return '1400'
-    elif score1 < score2:
-        return '1203'
-    else:
-        return 'not a valid elo score'
-
-with open('input.txt') as f:
-    for line in f:
-        if get_elo(line.split()) == '1400':
-            game_result -= 1
-    print(f"final elo score is {game_result}")
